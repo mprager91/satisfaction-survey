@@ -1,0 +1,147 @@
+čus, toto poslal Honzo Dušek, že tu maš, ty špina mala:
+Zde posílám html sablony:
+<!--
+
+ELECTREE / Nabídkovač — e-mailová šablona: SPOKOJENOST S UZAVŘENÍM SMLOUVY
+Předmět:   Jak jste byli spokojeni s uzavřením smlouvy?
+  Použití:   Daktela — automatický e-mail po uzavření nové smlouvy
+             (stejná syntaxe proměnných jako Freshdesk)
+  Proměnné:  {{activity.ticket.customFields.survey_url_1[0]}}  → odkaz na hodnocení 1 hvězda
+             {{activity.ticket.customFields.survey_url_2[0]}}  → odkaz na hodnocení 2 hvězdy
+             {{activity.ticket.customFields.survey_url_3[0]}}  → odkaz na hodnocení 3 hvězdy
+             {{activity.ticket.customFields.survey_url_4[0]}}  → odkaz na hodnocení 4 hvězdy
+             {{activity.ticket.customFields.survey_url_5[0]}}  → odkaz na hodnocení 5 hvězd
+             Jde o NOVÉ proměnné — backend je musí naplnit
+             (<Nabídkovač | Electree 
+  Layout:    odvozeno z _base.html — chrome (hlavička, kontakt, patička) needituj
+--><!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]--><!--[if mso]>
+  <style type="text/css">
+    * { font-family: Arial, Helvetica, sans-serif!important; }
+  </style>
+  <![endif]--><!-- preheader -->
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;font-family:Arial,Helvetica,sans-serif;color:#f7f8f7;">Jedno kliknutí nám pomůže být ještě lepší. ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ </div>
+<table class="dm-page" width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f7f8f7" style="background-color: rgb(247, 248, 247); min-width: 100%; height: 100%; border-collapse: collapse; border-spacing: 0px; border: 0px;">
+  <tbody>
+    <tr>
+      <td align="center" valign="top" bgcolor="#f7f8f7" style="background-color:#f7f8f7;padding:24px 12px 32px 12px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <table class="container" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: 0px auto; border-collapse: collapse; border-spacing: 0px; border: 0px;"><!-- =============== HLAVIČKA =============== -->
+          <tbody>
+            <tr>
+              <td align="center" bgcolor="#0d3d34" class="px" style="background-color:#0d3d34;padding:26px 32px 24px 32px;border-radius:12px 12px 0 0;text-align:center;"><a href="Electree – Energie, které myslí za vás | Dodavatel energií v ČR " target="_blank" title="Electree" style=" text-decoration: none;"><img src="https://nabidka.dev.electree.cz/images/email/electree-logo.png" width="160" height="34" alt="Electree" style="border: 0px; height: auto; line-height: 100%; outline: none; text-decoration: none;" class="fr-fic fr-dii" data-error-handled="true"></a></td>
+            </tr>
+            <tr>
+              <td bgcolor="#d7ff00" style="background-color:#d7ff00;font-size:0;line-height:0;height:4px;"> </td>
+            </tr><!-- =============== OBSAH =============== -->
+            <tr>
+              <td class="dm-card px" bgcolor="#ffffff" style="background-color:#ffffff;padding:40px 32px 8px 32px;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-spacing: 0px; border: 0px;">
+                  <tbody>
+                    <tr>
+                      <td class="h1 dm-text" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:26px;line-height:34px;font-weight:700;color:#141a14;text-align:center;padding:0 0 16px 0;mso-line-height-rule:exactly;">Jak jste byli spokojeni s uzavřením smlouvy?</td>
+                    </tr>
+                    <tr>
+                      <td class="dm-text" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;color:#3d4840;text-align:center;padding:0 0 10px 0;mso-line-height-rule:exactly;">Dobrý den,</td>
+                    </tr>
+                    <tr>
+                      <td class="dm-text" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;color:#3d4840;text-align:center;padding:0 0 26px 0;mso-line-height-rule:exactly;">děkujeme, že jste si vybrali Electree. Budeme rádi, když nám jedním kliknutím dáte vědět, jak jste byli spokojeni s uzavřením smlouvy.</td>
+                    </tr><!-- hvězdičky -->
+                    <tr>
+                      <td align="center" style="text-align:center;padding:0 0 8px 0;">
+                        <table align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0px auto; border-collapse: collapse; border-spacing: 0px; border: 0px;">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="text-align:center;padding:0 6px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;"><a href="{{activity.ticket.customFields.survey_url_1[0]}}" target="_blank" style=" text-decoration: none;"><span style="color:#2a9c30;font-size:36px;line-height:40px;font-weight:700;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">★</span><br><span class="dm-muted" style="color:#72807a;font-size:13px;line-height:18px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">1</span></a></td>
+                              <td align="center" style="text-align:center;padding:0 6px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;"><a href="{{activity.ticket.customFields.survey_url_2[0]}}" target="_blank" style=" text-decoration: none;"><span style="color:#2a9c30;font-size:36px;line-height:40px;font-weight:700;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">★</span><br><span class="dm-muted" style="color:#72807a;font-size:13px;line-height:18px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">2</span></a></td>
+                              <td align="center" style="text-align:center;padding:0 6px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;"><a href="{{activity.ticket.customFields.survey_url_3[0]}}" target="_blank" style=" text-decoration: none;"><span style="color:#2a9c30;font-size:36px;line-height:40px;font-weight:700;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">★</span><br><span class="dm-muted" style="color:#72807a;font-size:13px;line-height:18px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">3</span></a></td>
+                              <td align="center" style="text-align:center;padding:0 6px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;"><a href="{{activity.ticket.customFields.survey_url_4[0]}}" target="_blank" style=" text-decoration: none;"><span style="color:#2a9c30;font-size:36px;line-height:40px;font-weight:700;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">★</span><br><span class="dm-muted" style="color:#72807a;font-size:13px;line-height:18px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">4</span></a></td>
+                              <td align="center" style="text-align:center;padding:0 6px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;"><a href="{{activity.ticket.customFields.survey_url_5[0]}}" target="_blank" style=" text-decoration: none;"><span style="color:#2a9c30;font-size:36px;line-height:40px;font-weight:700;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">★</span><br><span class="dm-muted" style="color:#72807a;font-size:13px;line-height:18px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-decoration:none;">5</span></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dm-muted" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#72807a;text-align:center;padding:0 0 26px 0;mso-line-height-rule:exactly;">1 = nespokojen/a  ·  5 = velmi spokojen/a</td>
+                    </tr><!-- fallback odkazy -->
+                    <tr>
+                      <td class="dm-muted" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:20px;color:#72807a;text-align:center;padding:0 0 30px 0;mso-line-height-rule:exactly;">Nefungují hvězdičky? Klikněte na číslo:<br><a href="{{activity.ticket.customFields.survey_url_1[0]}}" target="_blank" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">1</span></a> <span class="dm-muted" style="color:#72807a;"> · </span> <a href="{{activity.ticket.customFields.survey_url_2[0]}}" target="_blank" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">2</span></a> <span class="dm-muted" style="color:#72807a;"> · </span> <a href="{{activity.ticket.customFields.survey_url_3[0]}}" target="_blank" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">3</span></a> <span class="dm-muted" style="color:#72807a;"> · </span> <a href="{{activity.ticket.customFields.survey_url_4[0]}}" target="_blank" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">4</span></a> <span class="dm-muted" style="color:#72807a;"> · </span> <a href="{{activity.ticket.customFields.survey_url_5[0]}}" target="_blank" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">5</span></a></td>
+                    </tr>
+                    <tr>
+                      <td class="dm-text" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;color:#3d4840;text-align:center;padding:0 0 20px 0;mso-line-height-rule:exactly;">Děkujeme za důvěru.</td>
+                    </tr>
+                    <tr>
+                      <td class="dm-text" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;color:#3d4840;text-align:center;padding:0 0 4px 0;mso-line-height-rule:exactly;">S pozdravem<br><strong class="dm-text" style="color:#141a14;">Tým Electree</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr><!-- =============== KONTAKTNÍ BLOK =============== -->
+            <tr>
+              <td class="dm-card px" align="center" bgcolor="#ffffff" style="background-color:#ffffff;text-align:center;padding:16px 32px 32px 32px;">
+                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="dm-panel" bgcolor="#ebf7f1" style="margin: 0px auto; background-color: rgb(235, 247, 241); border: 1px solid rgb(216, 234, 224); border-radius: 12px; border-collapse: collapse; border-spacing: 0px;">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="padding:20px 24px 20px 24px;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;text-align:center;">
+                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0px auto; border-collapse: collapse; border-spacing: 0px; border: 0px;">
+                          <tbody>
+                            <tr>
+                              <td class="dm-muted" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#72807a;text-align:center;padding:0 0 4px 0;mso-line-height-rule:exactly;">Máte otázky? Rádi vám poradíme.</td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:22px;line-height:30px;font-weight:700;text-align:center;padding:0 0 4px 0;mso-line-height-rule:exactly;"><a href="tel:+420790421339" style=" text-decoration: none;"><span class="dm-phone" style="color:#0d3d34;text-decoration:none;font-size:22px;line-height:30px;font-weight:700;">+420 790 421 339</span></a></td>
+                            </tr>
+                            <tr>
+                              <td class="dm-muted" align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#72807a;text-align:center;mso-line-height-rule:exactly;">Po–Pá, 9:00–17:00  ·  <a href="mailto:info@electree.cz" style=" text-decoration: none;"><span class="dm-link" style="color:#1e7d23;text-decoration:underline;">info@electree.cz</span></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr><!-- =============== PATIČKA =============== -->
+            <tr>
+              <td bgcolor="#0d3d34" class="px" align="center" style="background-color:#0d3d34;text-align:center;padding:24px 32px 26px 32px;border-radius:0 0 12px 12px;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-spacing: 0px; border: 0px;">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="text-align:center;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;padding:0 0 10px 0;"><span style="color:#c2cecc;">TRAMACO ENERGY s.r.o. · ELECTREE SMART s.r.o.</span></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:13px;line-height:22px;text-align:center;padding:0 0 12px 0;"><a href="Electree – Energie, které myslí za vás | Dodavatel energií v ČR " target="_blank" style=" text-decoration: none;"><span style="color:#d7ff00;text-decoration:none;font-weight:600;">Electree – Energie, které myslí za vás | Dodavatel energií v ČR </span></a> <span style="color:#62817b;"> · </span> <a href="mailto:info@electree.cz" style=" text-decoration: none;"><span style="color:#d7ff00;text-decoration:none;font-weight:600;">info@electree.cz</span></a> <span style="color:#62817b;"> · </span> <a href="tel:+420790421339" style=" text-decoration: none;"><span style="color:#d7ff00;text-decoration:none;font-weight:600;">+420 790 421 339</span></a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:0;line-height:0;padding:0 0 12px 0;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-spacing: 0px; border: 0px;">
+                          <tbody>
+                            <tr>
+                              <td height="1" bgcolor="#20544a" style="background-color:#20544a;font-size:0;line-height:0;height:1px;"> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="text-align:center;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:11px;line-height:18px;color:#ffffff;"><span style="color:#7a948f;">Nabídka vychází z údajů, které jste nám poskytl/a. Její závazné podmínky a platnost najdete v dokumentu nabídky.</span></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="text-align:center;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,Helvetica,sans-serif;font-size:11px;line-height:18px;color:#ffffff;padding:8px 0 0 0;"><span style="color:#62817b;">© 2026 Electree · nabidka.electree.cz</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table><!--[if mso | IE]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </tbody>
+</table>
